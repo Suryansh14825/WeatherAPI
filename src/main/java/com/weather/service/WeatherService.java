@@ -1,4 +1,8 @@
 package com.weather.service;
 
-public class WeatherService {
+import com.weather.dto.WeatherResponseDTO;
+
+public interface WeatherService {
+    WeatherResponseDTO getWeather(String pincode, String date);
 }
+
